@@ -2,6 +2,11 @@
 
 function hashIt(val) {
   var hv = val.toString();
+  var hArray;
+  for (i = 0; i < hv.length + 1; i++) { 
+    hArray.push(hv.charCodeAt(i -1));
+  }
+  var hv = hArray.join('-');
   
   return hv;
 }
